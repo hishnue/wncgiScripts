@@ -1,0 +1,45 @@
+Description:
+
+These Files were made to run the administrative website for 
+the Binghamton University Graduate Conference in Algebra and Topology for
+2009 to 2012 and the Upstate New York Number Theory Conferece in 2013.  
+
+Theses sites were run on the math department's WN server, which is why we didn't
+just use PHP, as their WN server dosn't support anything developed after 1992
+or so.  
+
+The intended usage is for the user to just use the defined XML format 
+(see example in xmlFormParser.py) to 
+layout the format of the website and 
+to have xmlFormParser.py use the XML dat to make a registration page. 
+This workes in stages:
+1) if the user had not visited the site before a blank form would be displayed
+2) if the user made an error in filling out the form
+ then an error page would be displayed
+3) if the user successfully filled out the form, then the information would
+ be stored in the database and a message would be displayed indicating
+ that they had been registered.   
+
+The module wnparser.py was created, due to compatibility issues.  
+The WN server allows you to add a wrapper and to use conditionals
+when serving a file, but it does not have any of this functinality for
+the output of CGI scripts, 
+so wnparser.py emulates this functionality and streamlines the whole site.  
+
+There are some other administrative programs not included here.  
+The reason for this is that anyone learning how to use this type of
+code on the department's servers should learn to do it by writing 
+the administrative programs.  All they need to do is access the information
+in the database, display the data, and check for validity.  
+
+TODO:
+
+If you ever use this outside the math department, 
+which is unlikely considering that almost no one uses a WN server,
+then you should consider creating a more detailed explination of the XML data. 
+
+Authors:
+
+Michael Fink
+Michael Hampton
+Simon Leptkin

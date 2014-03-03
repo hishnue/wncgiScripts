@@ -1,0 +1,22 @@
+CREATE TABLE participants2013 (
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ timestamp TIMESTAMP(14) DEFAULT NOW(),
+ lastName VARCHAR(255), 
+ firstName VARCHAR(255),
+ title VARCHAR(255),
+ institution VARCHAR(255),
+ wantsToTalk VARCHAR(255),
+ email VARCHAR(255),
+ requestsFunding VARCHAR(255),
+ adviserFirstName VARCHAR(255),
+ adviserLastName VARCHAR(255),
+ adviserEmail VARCHAR(255),
+ comments TEXT
+ );
+
+CREATE TABLE adminUsers (
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ user VARCHAR(255),
+ password VARCHAR(255),
+ permission VARCHAR(255)
+ );
