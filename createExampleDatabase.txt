@@ -14,9 +14,3 @@ CREATE TABLE participants2013 (
  comments TEXT
  );
 
-CREATE TABLE adminUsers (
- id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- user VARCHAR(255),
- password VARCHAR(255),
- permission VARCHAR(255)
- );
