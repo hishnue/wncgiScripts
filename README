@@ -8,10 +8,12 @@ Theses sites were run on the math department's WN server, which is why we didn't
 just use PHP, as their WN server dosn't support anything developed after 1992
 or so.  
 
-The intended usage is for the user to just use the defined XML format 
+The user is to use the defined XML format 
 (see example in xmlFormParser.py) to 
-layout the format of the website and 
-to have xmlFormParser.py use the XML dat to make a registration page. 
+specify the fields of the form and their corresponding variables
+in a datbase. 
+The script xmlFormParser.py, then  uses this XML data to 
+make a registration page. 
 This workes in stages:
 1) if the user had not visited the site before a blank form would be displayed
 2) if the user made an error in filling out the form
