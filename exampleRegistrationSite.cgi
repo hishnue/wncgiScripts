@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-name: attendee12.cgi
+name: exampleRegistrationSite.cgi
 usage: People that are to attend should use this page to register for the conference.   
 """
 print "Content-Type: text/html\n\n"
@@ -17,8 +17,8 @@ import cgi
 form="""\
 <form>
 <processingProgram>exampleRegistrationSite.cgi</processingProgram>
-<toDatabase>NumTheoryConf</toDatabase>
-<toTable>participants2013</toTable>
+<toDatabase>exampleDatabase</toDatabase>
+<toTable>exampleTable</toTable>
 
 <message>
 	<h2><center>Application for Registration</center></h2>
